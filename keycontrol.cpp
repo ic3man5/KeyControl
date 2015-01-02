@@ -78,24 +78,3 @@ void KeyControl::setScrollOption(Option option)
     scroll_option = option;
 }
 
-
-/*
- * bool is_caps_enabled(short& state) {
-    return ((state & 0x80) != 0x80 && (state & 0x01) == 0x01);
-}
-
-int main()
-{
-    while (true) {
-        short keystate = 0;
-        Sleep(10);
-        keystate = GetKeyState(VK_CAPITAL);
-        if (is_caps_enabled(keystate)) {
-            cout << "Turning off Capslock" << endl;
-            keybd_event(VK_CAPITAL, 0, KEYEVENTF_EXTENDEDKEY | 0, 0);
-            keybd_event(VK_CAPITAL, 0, KEYEVENTF_EXTENDEDKEY | KEYEVENTF_KEYUP, 0);
-        }
-    }
-    return 0;
-}
-*/
